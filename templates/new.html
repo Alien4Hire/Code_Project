@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<table>
+    <tr>
+      <td>Last updated</td>
+      <td class="transfer_date" data="July 26th, 2020 1:01 pm"></td>
+    </tr>
+    <tr>
+      <td>Amount</td>
+      <td class="transfer_amount"><span data-bind="$20,000"></span>&nbsp;<span data-bind="USD"></span></td>
+    </tr>
+    <tr class="merchant_fee hide_details">
+      <td>Merchant Fee</td>
+      <td class="transfer_merchant_fee"><span data-bind="currency:details.merchant_fee_currency details.merchant_fee_amount"></span>&nbsp;<span data-bind="text details.merchant_fee_currency"></span></td>
+    </tr>
+    <tr class="service_fee hide_details">
+      <td>Service fee</td>
+      <td class="transfer_service_fee"><span data-bind="currency:details.service_fee_currency details.service_fee_amount"></span>&nbsp;<span data-bind="text details.service_fee_currency"></span></td>
+    <tr>
+      <td>Net Amount</td>
+      <td class="transfer_net_amount"><span data-bind="$20,000"></span>&nbsp;<span data-bind="USD"></span></td>
+    </tr>
+    <tr>
+      <td>From Account</td>
+      <td class="transfer_from" data-bind="Primary"></td>
+    </tr>
+    <tr>
+      <td>To Account</td>
+      <td class="transfer_to" data-bind="MasterCard ********7497 - 06/24"></td>
+    </tr>
+    <tr class="subaccount_transfer fxgt hide_details">
+      <td>Exchange rate</td>
+      <td class="transfer_rate"><span data-bind="text details.rate"></span>&nbsp;<span data-bind="text details.from_currency"></span>/<span data-bind="text details.to_currency"></span></td>
+    </tr>
+    <tr class="fxgt hide_details">
+      <td>Reason for Transfer</td>
+      <td class="transfer_reason"><span data-bind="text details.reason"></span>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td class="transfer_status">
+        <label class="capitalize" data-bind="Completed"></label>
+        <a id="cancel_withdrawal" class="hide_details" href="#">Cancel</a>
+        <label class="error"></label>
+      </td>
+    </tr>
+    <tr class="deposit_instructions_oel hide_details">
+      <td>Deposit Instructions</td>
+      <td>
+        <a id="bank" class="show_instructions" href="#">Show Instructions</a>
+      </td>
+    </tr>
+    <tr class="deposit_instructions_oap hide_details">
+      <td>Deposit Instructions</td>
+      <td>
+        Show Instructions:
+        <a method="internet" class="show_instructions" href="#">Internet Banking / ACH</a>
+        <a method="bank" class="show_instructions" href="#">Wire</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Reference #</td>
+      <td class="transfer_ref" data-bind="17551927"></td>
+    </tr>
+  </table>
